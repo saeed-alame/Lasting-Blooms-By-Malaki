@@ -1,0 +1,50 @@
+/* background.css - styles for the animated flower background */
+
+/* the canvas sits behind everything on the page */
+#background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* the soft colored backdrop. It is plain CSS so it does not slow the page down.
+   Each radial-gradient is one big soft patch of color fading into nothing. */
+body.fancy-background {
+  background-color: white;
+  background-image:
+    radial-gradient(circle at 15% 10%, thistle, transparent 45%),
+    radial-gradient(circle at 85% 20%, mistyrose, transparent 40%),
+    radial-gradient(circle at 70% 75%, plum, transparent 45%),
+    radial-gradient(circle at 10% 85%, lavenderblush, transparent 40%),
+    linear-gradient(lavender, white);
+  background-attachment: fixed;
+}
+
+/* when the background is on, these sections stop covering it */
+body.fancy-background .hero,
+body.fancy-background .section-light {
+  background-color: transparent;
+}
+
+/* the on/off button in the corner */
+.background-toggle {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 10;
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.background-toggle:hover {
+  background-color: indigo;
+}

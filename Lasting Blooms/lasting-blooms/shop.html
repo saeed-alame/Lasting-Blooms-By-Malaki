@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and order flowers from Lasting Blooms by Malaki.">
+  <title>Shop | Lasting Blooms</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+
+  <header>
+    <nav class="container nav-bar">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Lasting Blooms logo, a purple M inside a circle of flowers" class="logo-img">
+        <span>Lasting Blooms</span>
+      </a>
+      <button class="menu-button" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shop.html#cart">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1>Shop</h1>
+        <p>Pick your flowers and add them to your cart.</p>
+        <br>
+        <input type="text" id="search-box" class="search-box" placeholder="Search flowers..." aria-label="Search flowers">
+
+        <!-- Section 1: Bouquets -->
+        <h2>Bouquets</h2>
+        <div class="grid">
+          <div class="card product-card" data-name="Midnight Elegance">
+            <img src="images/flowers/Midnight.jpeg" alt="navy blue and white flower bouquet" class="card-image">
+            <h3>Midnight Elegance</h3>
+            <p class="price">$20</p>
+            <button class="button add-button" data-name="Midnight Elegance" data-price="20">Add to cart</button>
+          </div>
+
+          <div class="card product-card" data-name="Moments in Bloom">
+           <img src="images/flowers/MIB.jpeg" alt="Moments in Bloom" class="card-image">
+            <h3>Moments in Bloom</h3>
+            <p class="price">$35</p>
+            <button class="button add-button" data-name="Moments in Bloom" data-price="25">Add to cart</button>
+          </div>
+
+          <div class="card product-card" data-name="Memories of Love">
+             <img src="images/flowers/MOL.jpeg" alt="Memories of Love" class="card-image">
+            <h3>Memories of Love</h3>
+            <p class="price">$30</p>
+            <button class="button add-button" data-name="Memories of Love" data-price="30">Add to cart</button>
+          </div>
+
+          <div class="card product-card" data-name="Scarlet">
+          <img src="images/flowers/scarlet.jpeg" alt="flowers" class="card-image">
+            <h3>Scarlet</h3>
+            <p class="price">50$</p>
+            <button class="button add-button" data-name="Scarlet" data-price="25">Add to cart</button>
+          </div>
+
+          <div class="card product-card" data-name="Midnight Royalty">
+          <img src="images/flowers/Royalty.jpeg" alt="navy blue and white flower bouquet" class="card-image">
+            <h3>Midnight Royalty</h3>
+            <p class="price">$45</p>
+            <button class="button add-button" data-name=""Midnight Royalty" data-price="25">Add to cart</button>
+          </div>
+
+          <div class="card product-card" data-name="Winter Kiss">
+          <img src="images/flowers/winterkiss.jpeg" alt="navy blue and white flower bouquet" class="card-image">
+            <h3>Winter Kiss</h3>
+            <p class="price">$15</p>
+            <button class="button add-button" data-name="Winter Kiss" data-price="25">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light">
+      <div class="container">
+        <!-- Section 2: Single flowers -->
+        <h2>Single Flowers</h2>
+        <div class="grid">
+          <div class="card product-card" data-name="Single Rose">
+            <img src="images/flowers/Single Rose.jpeg" alt="single flowers" class="card-image">
+            <h3>Single Rose</h3>
+            <p class="price">$5</p>
+            <button class="button add-button" data-name="Single Rose" data-price="5">Add to cart</button>
+          </div>
+          <div class="card product-card" data-name="PinkOctober">
+          <img src="images/flowers/PinkOctober.jpeg" alt="single flowers" class="card-image">
+            <h3>PinkOctober</h3>
+            <p class="price">$6</p>
+            <button class="button add-button" data-name="PinkOctober" data-price="6">Add to cart</button>
+          </div>
+          <div class="card product-card" data-name="Flower 3">
+            <img src="images/flowers/t1.jpeg" alt="single flowers" class="card-image">
+            <h3>Sky Blue</h3>
+            <p class="price">$7</p>
+            <button class="button add-button" data-name="Sky Blue" data-price="7">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <!-- Section 3: Gift boxes -->
+        <h2>Gift Boxes</h2>
+        <div class="grid">
+          <div class="card product-card" data-name="Gift Box 1">
+            <img src="images/flowers/MOL.jpeg" alt="single flowers" class="card-image">
+            <h3>Memories of Love</h3>
+            <p class="price">$35</p>
+            <button class="button add-button" data-name="Memories of Love" data-price="35">Add to cart</button>
+          </div>
+          <div class="card product-card" data-name="Gift Box 2">
+            <img src="images/flowers/Initial in Bloom.jpeg" alt="single flowers" class="card-image">
+            <h3>Initial in Bloom</h3>
+            <p class="price">$40</p>
+            <button class="button add-button" data-name="Initial in Bloom" data-price="40">Add to cart</button>
+          </div>
+          <div class="card product-card" data-name="Gift Box 3">
+           <img src="images/flowers/MIB.jpeg" alt="single flowers" class="card-image">
+            <h3>Moments in Bloom</h3>
+            <p class="price">$45</p>
+            <button class="button add-button" data-name="Moments in Bloom" data-price="45">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light" id="cart">
+      <div class="container">
+        <h2>Your Cart</h2>
+        <div class="cart-box">
+          <div id="cart-list"></div>
+          <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+          <br>
+          <button id="clear-cart" class="button">Clear cart</button>
+          <a href="contact.html" class="button">Order by message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Lasting Blooms by Malaki</p>
+      <p><a href="contact.html">Contact</a> | <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </footer>
+
+  <script src="js/background.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

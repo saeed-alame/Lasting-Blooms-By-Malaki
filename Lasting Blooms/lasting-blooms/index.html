@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lasting Blooms by Malaki, a small flower shop.">
+  <title>Lasting Blooms by Malaki</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/preloader.css">
+    <script src="js/preloader.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="container nav-bar">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Lasting Blooms logo" class="logo-img">
+        <span>Lasting Blooms</span>
+      </a>
+
+      <button class="menu-button" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shop.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <!-- left side: the text -->
+        <div class="hero-text">
+          <p class="small-title">Handmade bouquets</p>
+          <h1>Lasting Blooms by Malaki</h1>
+          <!-- the sentence inside this span is typed by javascript (see script.js) -->
+          <p class="typing-line"><span id="typing-text"></span><span class="cursor"></span></p>
+          <p class="hero-description">Fresh flowers and bouquets made with care for birthdays, weddings and every day in between.</p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="button">Shop Flowers</a>
+            <a href="about.html" class="button button-outline">Our Story</a>
+          </div>
+        </div>
+
+        <!-- right side: the big picture with the tall frame on top of it -->
+        <div class="hero-art">
+          <div class="hero-image" role="img" aria-label="A bouquet of fresh flowers in soft purple and white"></div>
+          <span class="circle circle-small"></span>
+          <span class="circle circle-big"></span>
+          <span class="friend-outline"></span>
+          <div class="friend-frame" role="img" aria-label="The owner of Lasting Blooms standing in the shop"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Collections</h2>
+          <p>Whatever the moment is, we have something that fits it.</p>
+        </div>
+        <div class="grid">
+          <div class="collection-card">
+            <div class="collection-image bouquet-image" role="img" aria-label="A hand tied bouquet of mixed flowers"></div>
+            <div class="collection-body">
+              <h3>Bouquets</h3>
+              <p>Ready made bouquets in many colors and sizes.</p>
+              <a href="shop.html" class="collection-link">Browse bouquets &rarr;</a>
+            </div>
+          </div>
+          <div class="collection-card">
+            <div class="collection-image wedding-image" role="img" aria-label="White and purple flowers arranged for a wedding table"></div>
+            <div class="collection-body"> 
+              <h3>Wedding Flowers</h3>
+              <p>Flowers for brides, tables and the whole event.</p>
+              <a href="shop.html" class="collection-link">See wedding flowers &rarr;</a>
+            </div>
+          </div>
+          <div class="collection-card">
+            <div class="collection-image gift-image" role="img" aria-label="A gift box filled with flowers"></div>
+            <div class="collection-body">
+              <h3>Gift Boxes</h3>
+              <p>Flowers in a box, a nice gift for someone special.</p>
+              <a href="shop.html" class="collection-link">Find a gift box &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light">
+      <div class="container">
+        <h2 class="center">Why Choose Us</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Fresh Flowers</h3>
+            <p>We pick our flowers fresh so they last longer.</p>
+          </div>
+          <div class="card">
+            <h3>Made by Hand</h3>
+            <p>Every bouquet is arranged by hand, one at a time.</p>
+          </div>
+          <div class="card">
+            <h3>Custom Orders</h3>
+            <p>Tell us what you want and we will make it for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container center">
+        <h2>Want something special?</h2>
+        <p>Send us a message and we will help you pick the right flowers.</p>
+        <br>
+        <a href="contact.html" class="button">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Lasting Blooms by Malaki</p>
+      <p><a href="contact.html">Contact</a> | <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </footer>
+
+  <script src="js/background.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
